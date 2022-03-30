@@ -9,23 +9,48 @@
 </head>
 <body>
     <div class="left-container">
-        <div class="logo"> <img src="./img/DeerSkull.svg" alt="deer skull" class="main-logo">CERVID DEITY</div>
-        <p>Photo by <a href="https://unsplash.com/@luddyphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lucas Ludwig</a> on <a href="https://unsplash.com/s/photos/lake-superior?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        <div class="logo"> <img src="./img/DeerSkull.svg" alt="deer skull" class="main-logo">CERVID</div>
+        <p>
+            Photo by <a href="https://unsplash.com/@thejoltjoker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Johannes Andersson</a> on <a href="https://unsplash.com/s/photos/deer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         </p>
     </div>
-    <div class="right-container">
-        <div><h2>This is not real</h2></div>
+
+
+
+    <form name="sign-up" class="right-container">
         <div>
-            <header>Let's do this!</header>
-            <input type="text"><label for="">input thing 1</label>
-            <input type="text"><label for="">input thing 2</label>
-            <input type="text"><label for="">input thing 3</label>
-            <input type="text"><label for="">input thing 4</label>
-            <input type="text"><label for="">input thing 5</label>
-            <input type="text"><label for="">input thing 6</label>
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</p>
+            <p>You <em>know</em> you want to.</p>
         </div>
-        <div>Create account button and stuff <button>Create Account</button></div>
-    </div>
+        <div>
+            <p>Let's do this!</p>
+            <div class="input-grid">
+                <fieldset class="row-one-inputs">
+                    <label for="first-name">FIRST NAME</label>
+                    <input id="first-name" name="first-name" type="text">
+                    <label for="last-name">LAST NAME</label>
+                    <input id="last-name" name="last-name" type="text">
+                </fieldset> 
+                <fieldset class="row-two-inputs">
+                    <label for="email"></label>
+                    <input id="email" name="email" type="email">
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input id="phone-number" name="phone-number" type="tel">
+                </fieldset>
+                <fieldset class="row-three-inputs">
+                    <label for="password">PASSWORD</label>
+                    <input id="password" name="password" type="password">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input id="confirm-password" name="confirm-password" type="password">
+                </fieldset>
+            </div>
+        </div>
+        <div> 
+            <button type="submit" class="button">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+    </form>
     
 </body>
 </html>
+
