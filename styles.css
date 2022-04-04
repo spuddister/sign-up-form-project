@@ -58,6 +58,8 @@ img[src$=".svg"] {
     padding: 20px 0;
 }
 
+/* Top Right Section */
+
 .right-container {
     display: flex;
     flex-direction: column;
@@ -75,6 +77,8 @@ img[src$=".svg"] {
     padding: 0 120px 50px 50px;
 }
 
+/* Middle Right Section */
+
 .right-container > :nth-child(2) {
     display: flex;
     flex-direction: column;
@@ -86,31 +90,64 @@ img[src$=".svg"] {
 .input-grid {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     font-size: 12px;
-    color: rgb(26, 26, 26);
-}
-.left-inputs, .right-inputs {
-    flex-grow: 1;
-    align-items: left;
+    font-weight: 800;
+    color: rgb(48, 48, 48);
+    border: none;
+    align-items: stretch;
+    padding: 0;
+    letter-spacing: 1.5px;
 }
 
-.input-grid > fieldset {
+label {
+    flex-grow: 1;
+}
+
+.wrapper {
     display: flex;
-    max-width: 400px;
-    border: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 input {
     border-radius: 4px;
     font-size: 16px;
+    flex-grow: 1;
 }
+
+.input-wrap {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    margin-right: 60px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#password:invalid:focus, #confirm-password:invalid:focus {
+    /* border: solid red 1px; */
+    outline: red solid 2px;
+}
+
+#after-password {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 100%;
+}
+
+
+
+/* Bottom Right Section */
 
 .right-container > :last-child {
     padding: 40px 0 0 50px;
     font-size: 16px;
 }
 
-.button{
+#button{
     font-size: 16px;
     padding: 10px 50px;
     border-radius: 10px;
@@ -121,11 +158,11 @@ input {
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.301);
 }
 
-.button:hover {
+#button:hover {
     background-color: #464e1f;
 }
 
-.button:active {
+#button:active {
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.527);
     background-color: #363b17;
 }
